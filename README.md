@@ -32,7 +32,7 @@ sudo install -m 755 udp2tcp /usr/local/bin
 - 📚 pthread library
 
 ## 🚀 Usage
-- ./udp2tcp <udp_port> <count> <tcp_ip> <tcp_port> <threads>
+- ./udp2tcp <udp_port> <packet-count> <tcp_ip> <tcp_port> <threads>
 
 ## 📊 Architecture Diagram
 

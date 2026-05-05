@@ -19,10 +19,11 @@ A lightweight, high-performance UDP to TCP protocol converter that captures UDP 
 - 🐛 Network debugging and testing
 - 📡 IoT sensor data aggregation
 
-## build
+## 🔨 build
+
 - gcc udp2tcp.c -o udp2tcp -pthread
 
-# Install system-wide (optional)
+## Install system-wide (optional)
 sudo install -m 755 udp2tcp /usr/local/bin
 
 ### Prerequisites

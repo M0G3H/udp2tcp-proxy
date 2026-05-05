@@ -35,7 +35,8 @@ sudo install -m 755 udp2tcp /usr/local/bin
 - ./udp2tcp <udp_port> <count> <tcp_ip> <tcp_port> <threads>
 
 ## 📊 Architecture Diagram
-'''
+
+```
 ┌─────────────┐      ┌──────────────────────┐      ┌─────────────┐
 │   UDP       │      │   udp2tcp-proxy      │      │   TCP       │
 │   Clients   │─────►│                      │─────►│   Server    │
@@ -50,11 +51,12 @@ sudo install -m 755 udp2tcp /usr/local/bin
                      │  │  (batched)   │    │
                      │  └──────────────┘    │
                      │       ↓ ↓ ↓          │
-                     │  🔄 Auto-reconnect  │
+                     │  🔄 Auto-reconnect    │
                      └──────────────────────┘
-'''
+```
 
 ## ⚙️ Configuration Tuning
+```
 ┌─────────────────────────────────────────────────────────────┐
 │  📊 BATCH SIZE GUIDE                                        │
 ├──────────────┬──────────────────────────────────────────────┤
@@ -67,3 +69,4 @@ sudo install -m 755 udp2tcp /usr/local/bin
 │  4-8         │  High traffic on multi-core                  │
 │  CPU_cores*2 │  Heavy workloads (formula)                   │
 └──────────────┴──────────────────────────────────────────────┘
+```
